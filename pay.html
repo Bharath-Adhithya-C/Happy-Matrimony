@@ -1,0 +1,93 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <title>adp2 of sk</title>
+    <script src="https://kit.fontawesome.com/dfbca815e0.js" crossorigin="anonymous"></script>
+
+</head>
+<nav>
+   
+</nav>
+    <body>
+        <div class="container">
+            <div class="form-box">
+               
+             
+                <h1 id="title">Join US now @19999 Only</h1>
+                <form-1>
+                    <div class="input-group">
+                        <div class="input-field" id="nameField">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="Name On Card">
+                        </div>
+    
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="password" placeholder="Card Number">
+                        </div>
+						<div class="input-field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Re-enter Card number">
+                        </div>
+    
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="text" placeholder="IFSC CODE">
+                        </div>
+						<div class="input-field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="text" placeholder="OTP">
+                        </div>
+                        <p style="color: #fff;">to send OTP<a href="#">Click Here!</a></p>
+                       
+                    </div>
+					<br>
+					<br>
+					<br>
+					<br>
+
+                    <a href="#">
+                        <button type="button" id="signupBtn">Register<span></span></button>
+                        </a>
+                    <a href="#">
+                        <button type="button"id="loginBtn" class="disable" >Sign in<span></span></button>
+                        </a>
+                 </form-1>
+                 <h4 style="color: #fff;">Click PAY to proceed further...</h4>
+                 <a href="confrm.html" target="_blank">
+                    <button type="button"id="loginBtn" class="disable" >PAY<span></span></button>
+                    </a>
+            </div>
+            
+        </div>
+    
+    <script>
+    
+        let signupBtn = document.getElementById("signupBtn");
+        let loginBtn = document.getElementById("loginBtn");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title");
+    
+        loginBtn.onclick = function(){
+            nameField.style.maxHeight = "0";
+            title.innerHTML = "Log In";
+            signupBtn.classList.add("disable");
+            loginBtn.classList.remove("disable");
+        }
+        signupBtn.onclick = function(){
+        nameField.style.maxHeight = "60px";
+        title.innerHTML = "Sign Up";
+        signupBtn.classList.remove("disable");
+        loginBtn.classList.add("disable");
+        }
+    
+    
+    </script>
+    
+
+
+</body>
